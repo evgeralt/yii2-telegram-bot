@@ -12,7 +12,7 @@ In configuration file do
             'class' => \evgeralt\yii2telegram\TelegramBot::class,
             'api_key' => '',
             'bot_name' => '',
-            'webhook' => '',
+            'comandsPaths' => [],
         ],
   ],
 ```

@@ -13,9 +13,9 @@ use yii\di\Instance;
  */
 class TelegramBot extends Component
 {
-    public $api_key;
-    public $bot_name;
-    public $comandsPaths;
+    public $apiKey;
+    public $botName;
+    public $comandsPaths = [];
     public $withoutDb = false;
     /** @var Connection */
     public $dbConection = 'db';
@@ -27,13 +27,13 @@ class TelegramBot extends Component
      */
     public function init()
     {
-        if (!$this->api_key) {
+        if (!$this->apiKey) {
             throw new InvalidConfigException("api_key is required");
         }
-        if (!$this->bot_name) {
+        if (!$this->botName) {
             throw new InvalidConfigException("bot_name is required");
         }
-        $this->_client = new Telegram($this->api_key, $this->bot_name);
+        $this->_client = new Telegram($this->apiKey, $this->botName);
 
         $this->dbConection = Instance::ensure($this->dbConection, Connection::class);
         if (!$this->withoutDb) {
