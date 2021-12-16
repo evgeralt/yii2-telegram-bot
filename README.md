@@ -10,8 +10,8 @@ In configuration file do
   'components'  =>  [
         'telegram' => [
             'class' => \evgeralt\yii2telegram\TelegramBot::class,
-            'api_key' => '',
-            'bot_name' => '',
+            'apiKey' => '',
+            'botName' => '',
             'comandsPaths' => [],
         ],
   ],
