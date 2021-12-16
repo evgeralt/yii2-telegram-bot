@@ -1,0 +1,21 @@
+{
+  "name": "evgeralt/yii2-telegram-bot",
+  "description": "Yii2 telegram bot component on Longman Telegram Bot",
+  "type": "yii2-components",
+  "require": {
+    "php": ">=7.0",
+    "longman/telegram-bot": "~0.74.0",
+    "yiisoft/yii2": "~2.0.15"
+  },
+  "authors": [
+    {
+      "name": "Evgeniy Michkaryov",
+      "email": "bash057@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "evgeralt\\yii2telegram\\": ""
+    }
+  }
+}
