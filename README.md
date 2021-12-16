@@ -7,18 +7,12 @@ composer require evgeralt/yii2-telegram-bot
 In configuration file do
 ```php
 <?php
-...
   'components'  =>  [
-    ...
-    'components'	=>  [
         'telegram' => [
             'class' => \evgeralt\yii2telegram\TelegramBot::class,
             'api_key' => '',
             'bot_name' => '',
             'webhook' => '',
-        ]
-    ]
-    ...
+        ],
   ],
-...
- ?>
+```
