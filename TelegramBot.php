@@ -8,6 +8,9 @@ use yii\base\InvalidConfigException;
 use yii\db\Connection;
 use yii\di\Instance;
 
+/**
+ * @property-read Telegram $client
+ */
 class TelegramBot extends Component
 {
     public $api_key;
